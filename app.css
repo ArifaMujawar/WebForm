@@ -40,8 +40,8 @@ h2{
     color:rgb(165, 161, 161);
     font-size: 15px;
    
-    padding: 5px;
-    margin: 10px; 
+    /* padding: 5px; */
+    /* margin: 10px;  */
 }
 .Info-2-subheading2{
     font-size: 10px;
@@ -57,6 +57,7 @@ h2{
     flex-direction: row;
     margin:0px;
 }
+
 .row:after{
     content: "";
     display:table;
@@ -92,13 +93,12 @@ h2{
     margin:7px;
     padding: 0;
 }
-.Radios label{
-    margin: 10px;
-}
+
 .Radio-btn{
     padding: 0px;
     margin: 0px;
     visibility: hidden;
+    
 }
 input[type= "radio"]+label{
     padding: 10px;
@@ -112,6 +112,7 @@ input[type= "radio"]:checked+label{
     display: flex;
     flex-direction: column;
     float: left;
+    margin: 16px;
 }
 .checkbox-btn{
     padding: 0px;
@@ -155,11 +156,14 @@ input[type="checkbox"]:checked+label:before{
     border-color:rgb(59, 125, 145);
     border-style: solid;
 }
-label{
-    margin: 2px;
-    padding: 4px;
-    text-align: left;
+form.Radios {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
+
 textarea{
     border-color:rgb(165, 161, 161);
     background: none;
@@ -176,4 +180,67 @@ textarea{
 section{
     padding: 10px;
 
+}
+.details input:invalid{
+    border: 2px solid red;
+}
+.details input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    border-top: gray 1px solid;
+}
+
+
+@media only screen and (max-width: 600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .right1{
+        float: left;
+    }
+    .left1,.left,.right1,.right{
+        width: 100%;
+    }
+    div > input{
+      width:100%;
+      padding: 6px;
+    }
+    form.Radios {
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .right1{
+        float: left;
+    }
+    div :first-child input{
+      width:100%;
+      padding: 4px;
+    }
+    .left1,.left,.right1,.right{
+        width: 100%;
+    }
+    form.Radios {
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
