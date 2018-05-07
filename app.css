@@ -168,7 +168,9 @@ textarea{
     border-color:rgb(165, 161, 161);
     background: none;
     width: 100%;
+    color:white;
     height:8%; 
+    
 }
 .submit{
     background: rgb(59, 125, 145);
@@ -184,12 +186,27 @@ section{
 .details input:invalid{
     border: 2px solid red;
 }
+
 .details input{
     width: 100%;
     padding: 8px;
     border: none;
     background: none;
     border-top: gray 1px solid;
+    color: white;
+}
+.details input:placeholder-shown {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    border-top: gray 1px solid;
+}
+.details input::-webkit-input-placeholder{
+    color: transparent !important;
+}
+.details input::-moz-placeholder{
+    color: transparent !important;
 }
 
 

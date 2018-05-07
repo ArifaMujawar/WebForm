@@ -20,51 +20,51 @@
                         <div class="column1 left1">
                             <div class="details">
                               <label for="name">Full name<sup>*</sup></label>
-                              <input type="text" id="name"  required/>
+                              <input type="text" id="name" placeholder="name" pattern='[a-zA-Z]+' required/>
                             </div>
                         
                             <div class="details">
                               <label for="email">Email<sup>*</sup></label>
-                             <input type="email" id="email"  required/>
+                             <input type="email" id="email" placeholder="e-mail" pattern='^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$' required/>
                             </div>
                             <div class="details">
                                <label for="re-email">Re-enter email<sup>*</sup></label>
-                               <input type="email" id="re-email"   required/>
+                               <input type="email" id="re-email" placeholder="re-email" pattern='^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$' required/>
                             </div>
                         </div>
                         <div class="column1 right1">
                             <div class="details"> 
                                 <label for="phone">Phone<sup>*</sup></label>
-                                <input type="number" id="phone"  required/>
+                                <input type="number" id="phone" placeholder="phone" pattern='[0-9]+' required/>
                             </div>
                         </div>
                     </div>
                     <div class="details">
                         <label for="address">Address<sup>*</sup></label>
-                        <input type="text" id="address"  required/>
+                        <input type="text" id="address" placeholder="address" pattern='[a-zA-Z0-9]+' required/>
                     </div>
                     <div class="row">
                         <div class="column left details">
                             <label for="city">City<sup>*</sup></label>
-                           <input type="text" id="city"  required/>
+                           <input type="text" id="city" placeholder="city" pattern="[a-zA-Z]+" required/>
                         </div>
                         <div class=" column left details" >
                             <label for="state">State</label>
-                            <input type="text" id="state"  />
+                            <input type="text" id="state" placeholder="state" pattern="[a-zA-Z]+"/>
                         </div>
                         <div class="column right details"> 
                             <label for="country">Country/Region<sup>*</sup></label>
-                            <input type="text" id="country"  required/>
+                            <input type="text" id="country" placeholder="country" pattern="[a-zA-Z]+" required/>
                         </div>
                     <div class="column right details">
                         <label for="zip" >Zip/Postal code</label>
-                        <input type="text" id="zip"  />
+                        <input type="text" id="zip" pattern="[1-9]" placeholder="zip"/>
                     </div>
 
                     </div>
                     <div class=" details">
                             <label for="hear" >How did you hear about us</label>
-                            <input type="text" id="hear"  />
+                            <input type="text" id="hear" pattern="[a-zA-Z0-9]+" placeholder="hear"/>
                         </div>
 
                 </div>
