@@ -114,7 +114,7 @@ input[type= "radio"]:checked+label{
     float: left;
     margin: 16px;
 }
-.checkbox-btn{
+.checkbox-btn-discipline, .checkbox-btn-location{
     padding: 0px;
     margin: 7px;
     height: 0;
@@ -170,7 +170,8 @@ textarea{
     width: 100%;
     color:white;
     height:8%; 
-    
+    margin-top: 10px;
+    padding: 8px;
 }
 .submit{
     background: rgb(59, 125, 145);
@@ -202,11 +203,54 @@ section{
     background: none;
     border-top: gray 1px solid;
 }
-.details input::-webkit-input-placeholder{
-    color: transparent !important;
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.details input::-moz-placeholder{
-    color: transparent !important;
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(187, 180, 180);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-data{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    padding: 10px;
 }
 
 
